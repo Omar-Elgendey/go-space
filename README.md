@@ -1,4 +1,5 @@
-# Workspace Finder Website 🚀
+ # Go Space 🚀  
+### Coworking Spaces Finder Platform 🚀
 
 ## 📌 Overview
 
