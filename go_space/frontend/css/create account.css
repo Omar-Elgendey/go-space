@@ -30,13 +30,11 @@ body {
     display: block;
     color: #bc0010; 
     font-family: "Arial Black", "Arial Bold", sans-serif;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 900;
     letter-spacing: -1.5px;
-    text-transform: uppercase;
     text-align: center;
     margin-bottom: 25px;
-    transform: scaleY(1.05);
 }
 
 h2 {
@@ -58,7 +56,7 @@ h2 {
 
 .input-group label {
     display: block;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 700;
     color: #4a5568;
     margin-bottom: 8px;
@@ -73,7 +71,7 @@ h2 {
     background-color: #e2e8f0;
     font-size: 14px;
     outline: none;
-    transition: background 0.2s ease, transform 0.1s;
+   
 }
 
 .input-group input:focus {
@@ -91,7 +89,6 @@ h2 {
     font-weight: 700;
     cursor: pointer;
     margin-top: 10px;
-    transition: background 0.2s ease, transform 0.1s;
 }
 
 .sign-in-btn:hover {

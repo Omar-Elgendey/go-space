@@ -23,6 +23,10 @@ body {
     margin-left: 520px;
     margin-top: -68px;
 }
+.navbar li a {
+  color: #ba0013;
+  font-weight: bold;
+}
 
 .menu{
     display: flex;
