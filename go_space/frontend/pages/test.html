@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Gospace - Coworking Space</title>
+        <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2D7sAwgLmmX32zzW7VOflVR5gpgHOOU0Co1qi7e6f6JCb6SF">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+           
+        <header>
+            <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/11/Logos-01.png" class="logo" alt="logo">
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="place.html">Places</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+                <a href="signin.html"><button class="sign">Sign In</button></a>
+            </nav>
+        </header>
+
+        
+        <section class="search">
+            <div class="search-box">
+                <h1>
+                Calm & Cozy <br>
+                <span>workspace solutions</span>
+                </h1>
+
+                <div class="search-area">
+
+                <select id="workspace">
+                    <option value="" >Select Workspace</option>
+                    <option value="comma">Comma</option>
+                    <option value="barah">Barah</option>
+                    <option value="soullounge">Soul Lounge</option>
+                    <option value="arom">Arom</option>
+                    <option value="kroo">Kroo</option>
+                    <option value="bafaker">Bafaker</option>
+                    <option value="cozyhive">Cozy Hive</option>
+                    <option value="shaghaf">Shaghaf</option>
+                       <option value="mqrspaces">mqrspaces</option>
+                </select>
+            
+                <button id="findBtn">Find Workspace</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="services">
+            <h5 id="services">Services</h5>
+            <h2> Find your ideal working space.</h2>
+
+            <div class="cards-container">
+                <div class="card">
+                    <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/12/Shape-04.png" alt="Private Office">
+                    <h3>Private Office</h3>
+                <a href="#" onclick="showCard('privateOffice')">More detail</a>
+                      <div id="resultPO"></div>
+                </div>
+ 
+                <div class="card">
+                    <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/12/Shape-012.png" alt="Coworking">
+                    <h3>Coworking</h3>
+                <a href="#" onclick="showCard('coworking')">More detail</a>
+                      <div id="resultCW"></div>
+                </div>
+ 
+                <div class="card">
+                    <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/12/Shape-014.png" alt="Dedicated Desk">
+                    <h3>Dedicated Desk</h3>
+                  <a href="#" onclick="showCard('dedicatedDesk')">More detail</a>
+                        <div id="resultDD"></div>
+                </div>
+ 
+                <div class="card">
+                    <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/12/Shape-013.png" alt="Meeting Room">
+                    <h3>Meeting Room</h3>
+                    <a href="#" onclick="showCard('meetingRoom')">More detail</a>
+                          <div id="resultMR"></div>
+                </div>
+                </div>
+                <h2 class="section-title">All you need in one place</h2>
+                <section class="features">
+                        
+    <div class="feature-box">
+        <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/12/Shape-016.png" alt="internet">
+        <p>Internet</p>
+    </div>
+
+    <div class="feature-box">
+        <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/12/Shape-017.png" alt="">
+        <p>Business Printer</p>
+    </div>
+
+    <div class="feature-box">
+        <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/12/Shape-018.png" alt="">
+        <p>Meeting Rooms</p>
+    </div>
+
+    <div class="feature-box">
+        <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/12/Shape-021.png" alt="">
+        <p>Member Benefits</p>
+    </div>
+
+    <div class="feature-box">
+        <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/12/Shape-019.png" alt="">
+        <p>Events & Workshops</p>
+    </div>
+
+    <div class="feature-box">
+        <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/12/Shape-020.png" alt="">
+        <p>Business Support</p>
+    </div>
+
+    <div class="feature-box">
+        <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/12/Shape-022.png" alt="">
+        <p>Free Refreshment</p>
+    </div>
+
+    <div class="feature-box">
+        <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/12/Shape-023.png" alt="">
+        <p>Relaxing Lounge</p>
+    </div>
+
+    <div class="feature-box">
+        <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/12/Shape-024.png" alt="">
+        <p>24/7 Access</p>
+    </div>
+
+    <div class="feature-box">
+        <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/12/Shape-025-1.png" alt="">
+        <p>Ergonomic Chairs</p>
+    </div>
+
+    <div class="feature-box">
+        <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/12/Shape-026.png" alt="">
+        <p>Flexible Plans</p>
+    </div>
+
+    <div class="feature-box">
+        <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/12/Shape-027.png" alt="">
+        <p>Central Location</p>
+    </div>
+</section>
+        
+            </section>
+                
+
+        </section>
+      
+        
+
+        <footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-left">
+            <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/12/Logos-02.png" class="footer-logo">
+
+            <h2>Join our workspace community</h2>
+
+            <div class="social-icons">
+                <a href="#">F</a>
+                <a href="#">X</a>
+                <a href="#">Y</a>
+                <a href="#">I</a>
+            </div>
+
+            <form class="subscribe-form">
+                <input type="email" placeholder="Enter Your Email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+
+        <div class="footer-services">
+            <h3>Services</h3>
+            <ul>
+                <li>Office space</li>
+                <li>Coworking</li>
+                <li>Dedicated Desk</li>
+                <li>Meeting rooms</li>
+            </ul>
+        </div>
+
+
+
+        <div class="footer-contact">
+            <h3 id="contact">Contact</h3>
+            <p>Email: gospace@mail.com</p>
+            <p>Phone: +888-807-5000</p>
+            <p>Location: Jl. Sokarno-hatta 03</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        Copyright © 2025 Gospace | Powered by Onecontributor
+    </div>
+
+</footer>
+     <script src="scriptHome.js"></script>
+    </body>
+</html>
+

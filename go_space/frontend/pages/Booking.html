@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Your Cozy Co-working Space</title>
+<link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2D7sAwgLmmX32zzW7VOflVR5gpgHOOU0Co1qi7e6f6JCb6SF">
+
+
+<style>
+body{
+font-family:Arial;
+background:#f5f7fa;
+padding:30px;
+}
+
+h1{
+text-align:center;
+margin-bottom:30px;
+}
+
+/* 3 per row */
+.container{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+@media(max-width:900px){
+.container{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+.container{grid-template-columns:1fr;}
+}
+
+/* card */
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+text-align:center;
+padding-bottom:15px;
+}
+
+.card img{
+width:100%;
+height:170px;
+object-fit:cover;
+}
+
+.card h3{
+margin:10px 0;
+}
+
+.book-btn{
+padding:10px 18px;
+background:#ba0013;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+/* popup */
+.popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.6);
+justify-content:center;
+align-items:center;
+}
+
+.popup-box{
+background:white;
+width:420px;
+padding:25px;
+border-radius:15px;
+position:relative;
+}
+
+.close{
+position:absolute;
+right:15px;
+top:10px;
+font-size:25px;
+cursor:pointer;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+.confirm-btn{
+width:100%;
+padding:12px;
+background:#ba0013;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Choose Your Coworking Space</h1>
+
+<div class="container">
+
+<!-- Barah -->
+<div class="card">
+<img src="https://hotdesk-assets.s3.eu-west-1.amazonaws.com/workspaces/2234/BarahCo-WorkingSpace//IMG_4138.jpg/lg">
+<h3>Barah Coworking</h3>
+<button class="book-btn" onclick="openPopup('Barah Coworking')">Book</button>
+</div>
+
+<!-- Comma -->
+<div class="card">
+<img src="https://hotdesk-assets.s3.eu-west-1.amazonaws.com/listings/6131/MeetingRoomfor3people/WhatsAppImage2023-07-30at11.48.32AM.jpeg/md">
+<h3>Comma</h3>
+<button class="book-btn" onclick="openPopup('Comma')">Book</button>
+</div>
+
+<!-- Soul Lounge -->
+<div class="card">
+<img src="https://pbs.twimg.com/media/E73kqdsWQAwWGQp.jpg">
+<h3>Soul Lounge</h3>
+<button class="book-btn" onclick="openPopup('Soul Lounge')">Book</button>
+</div>
+
+<!-- Sha8af -->
+<div class="card">
+<img src="https://d26czciiy2b0rz.cloudfront.net/uploads/images/Shaghaf-11-1730033128.png">
+<h3>Sha8af Space</h3>
+<button class="book-btn" onclick="openPopup('Sha8af Space')">Book</button>
+</div>
+
+<!-- Arom -->
+<div class="card">
+<img src="https://scontent.fcai21-4.fna.fbcdn.net/v/t1.6435-9/200071525_302293441632703_3478303836843720948_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=tRUyNomuqgEQ7kNvwHHGAcL&_nc_oc=AdoQ95RRbRfbswL5GZKVePehlGoLBTaM3VesfKLGx_RuhdSpPyRxjF_jr49wjN6fYEE&_nc_zt=23&_nc_ht=scontent.fcai21-4.fna&_nc_gid=BXVPNsNOQl1J9TqeYG1PNQ&_nc_ss=7a3a8&oh=00_AfxcPpNrhMSOlZjlpYyxTjtGpxy6QRvnMbIh60jdCIOUAQ&oe=69F356E8">
+<h3>Arom</h3>
+<button class="book-btn" onclick="openPopup('Arom')">Book</button>
+</div>
+
+<!-- Zodiac -->
+<div class="card">
+<img src="https://imgs.search.brave.com/dsthaD3twkTPWVTDFfIXs6y0r9nMxn5Gw0A8Cx0NxPc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jb3dv/cmtlci5pbWdpeC5u/ZXQvcGhvdG9zL2Vn/eXB0L2FsZXhhbmRy/aWEvem9kaWFjLWNv/d29ya2luZy1hc3Bh/Y2UvMy5qcGc_dz0z/ODUmaD0yODUmcT05/MCZhdXRvPWZvcm1h/dCxjb21wcmVzcyZm/aXQ9Y3JvcCZtYXJr/PS90ZW1wbGF0ZS9p/bWcvd21faWNvbi5w/bmcmbWFya3NjYWxl/PTUmbWFya2FsaWdu/PWNlbnRlcixtaWRk/bGU">
+<h3>Zodiac</h3>
+<button class="book-btn" onclick="openPopup('Zodiac')">Book</button>
+</div>
+
+<!-- Bafakar -->
+<div class="card">
+<img src="https://hotdesk-assets.s3.eu-west-1.amazonaws.com/listings/11908/Lab//IMG_0962.jpg/md">
+<h3>Bafakar</h3>
+<button class="book-btn" onclick="openPopup('Bafakar')">Book</button>
+</div>
+
+<!-- CozyHive -->
+<div class="card">
+<img src="https://res.cloudinary.com/dayfv4et9/image/upload/w_1000/q_auto/f_auto/380230-Coworking%201.jpeg">
+<h3>CozyHive</h3>
+<button class="book-btn" onclick="openPopup('CozyHive')">Book</button>
+</div>
+
+<!-- KROO -->
+<div class="card">
+<img src="https://kroo.cc/wp-content/uploads/2023/04/median-02-1024x640.jpg">
+<h3>KROO</h3>
+<button class="book-btn" onclick="openPopup('KROO')">Book</button>
+</div>
+
+<!-- mqrspaces -->
+<div class="card">
+<img src="https://images.squarespace-cdn.com/content/v1/688894f2f559425570d50cf1/855bff37-7fbf-4118-80ed-c6492e1e7b68/DSC02505.jpg?format=750w">
+<h3>Mqrspaces</h3>
+<button class="book-btn" onclick="openPopup('mqrspaces')">Book</button>
+</div>
+
+</div>
+
+<!-- POPUP -->
+<div class="popup" id="popup">
+
+<div class="popup-box">
+
+<span class="close" onclick="closePopup()">&times;</span>
+
+<h2 id="title">Book</h2>
+
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email" required>
+<input type="tel" placeholder="Phone" required>
+
+<select>
+<option>Meeting Room</option>
+<option>Dedicated Desk</option>
+<option>Private Office</option>
+<option>Coworking Space</option>
+</select>
+
+<input type="number" placeholder="Attendees (Optional)">
+
+<input type="date" required>
+<input type="time" required>
+
+<select>
+<option>Cash</option>
+<option>Credit Card</option>
+<option>Debit Card</option>
+<option>Online Payment</option>
+</select>
+
+<button class="confirm-btn" onclick="confirmBooking()">
+Confirm Booking
+</button>
+
+</div>
+</div>
+
+
+<script>
+function openPopup(place){
+document.getElementById("popup").style.display="flex";
+document.getElementById("title").innerHTML="Book " + place;
+}
+
+function closePopup(){
+document.getElementById("popup").style.display="none";
+}
+
+function confirmBooking(){
+alert("Booking Confirmed ✓");
+closePopup();
+}
+</script>
+
+</body>
+</html>
