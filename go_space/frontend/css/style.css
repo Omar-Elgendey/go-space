@@ -6,18 +6,18 @@ header {
 }
 
 .navbar {
+  flex: 1;
   display: flex;
   align-items: center;
-  gap: 20px;
-  margin-left: 0;
-  margin-top: 0;
-  flex: 1;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0;
 }
 
 .menu {
+  flex: 1;
   display: flex;
   gap: 40px;
+  justify-content: center;
 }
 
 .menu li {
@@ -37,10 +37,10 @@ header {
   background-color: rgb(217, 33, 33);
   border-radius: 8px;
   color: white;
-  border-color: rgb(217, 33, 33);
+  border: none;
   font-size: large;
   cursor: pointer;
-
+  white-space: nowrap;
 }
 
 .logo {
@@ -48,7 +48,6 @@ header {
   height: auto;
   padding: 15px 25px;
   margin-right: 40px;
-
 }
 
 .welcome {
@@ -78,7 +77,6 @@ header {
   width: 400px;
   height: 200px;
   margin-top: 700px;
-
 }
 
 .search-box h1 {
@@ -144,7 +142,6 @@ header {
   padding: 20px;
   background: #fff;
   flex-direction: column;
-
 }
 
 .card img {
@@ -212,7 +209,6 @@ header {
 .feature-box p {
   font-size: 22px;
   color: #666;
-
 }
 
 .section-title {
@@ -221,9 +217,7 @@ header {
   font-size: 45px;
   color: #333;
   transform: translateY(250px);
-
 }
-
 
 .BlackBG {
   width: 1500px;
@@ -244,7 +238,7 @@ header {
   background: #111;
   color: white;
   padding: 80px 60px;
-  margin-top: 400px
+  margin-top: 400px;
 }
 
 .footer-container {
@@ -267,7 +261,6 @@ header {
   margin: 20px 0;
 }
 
-
 .social-icons a {
   background: #e12500;
   color: white;
@@ -287,7 +280,6 @@ header {
   border: none;
   width: 200px;
   border-radius: 10px;
-
 }
 
 .subscribe-form button {
@@ -312,7 +304,6 @@ header {
 
 .footer-bottom {
   text-align: center;
-  margin-top: 100px;
   color: #aaa;
   margin-left: 1000px;
   margin-top: 70px;
