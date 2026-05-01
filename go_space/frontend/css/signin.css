@@ -6,39 +6,44 @@
 }
 
 body {
-    background-color: #f3f6f9;
+    background-color: #f3f6f9; 
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; 
-    padding: 20px 0;
+    height: 100vh;
 }
 
 .wrapper {
     width: 100%;
     max-width: 420px;
+    padding: 20px;
 }
 
+/* --- Card Styling --- */
 .login-card {
     background: #ffffff;
-    padding: 40px;
+    padding: 45px 40px;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
 }
 
 .brand-logo {
     display: block;
+    /* The Color: a deep crimson red */
     color: #bc0010; 
+    
+    /* The Font: Bold, clean, and sans-serif */
     font-family: "Arial Black", "Arial Bold", sans-serif;
-    font-size: 30px;
+    font-size: 40px; /* Adjusted to look more like a logo */
     font-weight: 900;
-    letter-spacing: -1.5px;
+    
     text-align: center;
     margin-bottom: 25px;
+    
 }
 
 h2 {
-    color: #051638;
+    color: #051638; /* Navy Blue */
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 8px;
@@ -48,19 +53,19 @@ h2 {
     color: #718096;
     font-size: 14px;
     margin-bottom: 30px;
+    line-height: 1.4;
 }
 
 .input-group {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .input-group label {
     display: block;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 700;
     color: #4a5568;
     margin-bottom: 8px;
-    letter-spacing: 0.8px;
 }
 
 .input-group input {
@@ -68,33 +73,65 @@ h2 {
     padding: 15px;
     border: none;
     border-radius: 8px;
-    background-color: #e2e8f0;
+    background-color: #e2e8f0; /* Grey background fill */
     font-size: 14px;
-    outline: none;
-   
+    
 }
 
 .input-group input:focus {
     background-color: #cbd5e0;
 }
 
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgot-link {
+    font-size: 13px;
+    color: #051638;
+    text-decoration: none;
+    font-weight: 700;
+    
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 13px;
+    color: #718096;
+    cursor: pointer;
+}
+
 .sign-in-btn {
     width: 100%;
     padding: 18px;
     background-color: #051638;
-    color: #ffffff;
+    color: #faf6f6;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
-    margin-top: 10px;
 }
 
 .sign-in-btn:hover {
     background-color: #0a2456;
 }
 
-.sign-in-btn:active {
-    transform: scale(0.98);
+.footer-text {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 13px;
+    color: #718096;
+}
+
+.footer-text a {
+    color: #051638;
+    text-decoration: none;
+    font-weight: 700;
 }

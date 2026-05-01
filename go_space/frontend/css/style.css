@@ -6,11 +6,6 @@
     margin-top: -70px;
 }
 
-.navbar li a {
-  color: #ba0013;
-  font-weight: bold;
-}
-
 .menu{
     display: flex;
     gap: 40px;
@@ -44,6 +39,12 @@
     padding: 15px 25px;
     margin-right: 40px;
 
+}
+.welcome {
+    color: #ba0013;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
 }
 
 .search{
@@ -200,12 +201,15 @@
     
 }
 
-.section-title {
+.section-title{
     text-align: center;
-    font-size: 40px;
-    color: #333;
-    transform: translateY(250px); /* الرقم ده) هيزق الكلمة لتحت.. زوديه لحد ما توصل فوق الأشكال بظبط */
+    margin-top: 45px;
+    font-size: 45px;
+    color:#333;
+    transform: translateY(250px);
+    
 }
+
 
 .BlackBG{
     width:1500px;

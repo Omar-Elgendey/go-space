@@ -23,11 +23,13 @@ body {
     margin-left: 520px;
     margin-top: -68px;
 }
-.navbar li a {
-  color: #ba0013;
-  font-weight: bold;
-}
 
+.welcome {
+    color: #ba0013;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+}
 .menu{
     display: flex;
     gap: 40px;
@@ -45,7 +47,7 @@ body {
 }
 
 .sign,
-.btn.booking-btn {
+.booking {
     padding: 15px 30px; 
     background-color: rgb(217, 33, 33);
     border-radius: 15px; 
@@ -59,7 +61,7 @@ body {
     margin-top: 10px;
     display: inline-block;
 }
-.booking-btn {
+.booking {
     margin-left: 300px; 
 }
 
@@ -151,6 +153,7 @@ body {
   width: 100%;
   border-radius: 6px;
   cursor: pointer;
+  
 }
 
 /* Footer */
@@ -183,10 +186,6 @@ color: white;
   margin-bottom: 15px;
 }
 
-/* ============================= */
-/* Slide Down Details */
-/* ============================= */
-
 .details {
   max-height: 0;
   overflow: hidden;
@@ -206,10 +205,6 @@ color: white;
 .card-body .toggle-btn {
   margin-top: 10px;
 }
-
-/* ============================= */
-/* New styles for lists and amenities */
-/* ============================= */
 
 .details h4 {
   font-size: 15px;
@@ -254,4 +249,3 @@ color: white;
   font-size: 12px;
   color: #333;
 }
-/*--------------------------*/

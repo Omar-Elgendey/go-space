@@ -67,13 +67,21 @@ Availability_status VARCHAR(20),
 Capacity INT,
 FOREIGN KEY (Branch_ID) REFERENCES Branch(Branch_ID)
 );
-CREATE TABLE Booked_Rooms (
-U_ID INT,
-R_ID INT,
-FOREIGN KEY (U_ID) REFERENCES User(User_ID),
-FOREIGN KEY (R_ID) REFERENCES Rooms(Room_ID)
+CREATE TABLE Bookings (
+    Booking_ID INT PRIMARY KEY AUTO_INCREMENT,
+    User_ID INT,
+    Room_ID INT,
+    Full_Name VARCHAR(100),
+    Email VARCHAR(100),
+    Phone VARCHAR(20),
+    Room_Type VARCHAR(50),
+    Attendees INT,
+    Booking_Date DATE,
+    Booking_Time TIME,
+    Payment_Method VARCHAR(50),
+    FOREIGN KEY (User_ID) REFERENCES User(User_ID),
+    FOREIGN KEY (Room_ID) REFERENCES Rooms(Room_ID)
 );
-
 INSERT INTO User VALUES
 (1,'Karim','pass123','01011111111','karim1@gmail.com'),
 (2,'Ahmed','pass234','01022222222','ahmed@gmail.com'),
@@ -216,17 +224,6 @@ INSERT INTO Rooms VALUES
 (9,68,600,'Private Office','Available',6),
 (10,69,300,'Meeting Room','Not Available',8);
 
-INSERT INTO Booked_Rooms  VALUES
-(1, 1),
-(2, 2),
-(3, 3),
-(4, 4),
-(5, 5),
-(6, 6),
-(7, 7),
-(8, 8),
-(9, 9),
-(10, 10);
 
 SELECT  Coworking_space.S_Name, Branch.Branch_name, Branch.Address
 FROM Coworking_space
@@ -249,10 +246,10 @@ FROM Coworking_space
 JOIN Rated_places ON Coworking_space.Place_ID = Rated_places.ID
 GROUP BY Coworking_space.S_Name;
 
-SELECT User.Username, Rooms.Room_type, Rooms.price
-FROM Booked_Rooms
-JOIN User ON Booked_Rooms.U_ID = User.User_ID
-JOIN Rooms ON Booked_Rooms.R_ID = Rooms.Room_ID;
+SELECT User.Username, Rooms.Room_type, Rooms.price, Bookings.Booking_Date, Bookings.Booking_Time
+FROM Bookings
+JOIN User ON Bookings.User_ID = User.User_ID
+JOIN Rooms ON Bookings.Room_ID = Rooms.Room_ID;
 
 SELECT * FROM Rooms;
 
@@ -273,5 +270,4 @@ WHERE ID = 11 AND User_ID = 2;
 
 SELECT * FROM Rooms
 WHERE price < 300;
-
 

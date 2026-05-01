@@ -5,7 +5,7 @@
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title>Gospace - Coworking Space</title>
         <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2D7sAwgLmmX32zzW7VOflVR5gpgHOOU0Co1qi7e6f6JCb6SF">
-        <link rel="stylesheet" href="C:\Users\Z BOOK\go-space\go_space\frontend\css\style.css">
+        <link rel="stylesheet" href="/frontend/css/style.css">
     </head>
     <body>
            
@@ -15,10 +15,15 @@
                 <ul class="menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="place.html">Places</a></li>
+                    <li><a href="/places">Places</a></li>
                     <li><a href="#contact">Contact us</a></li>
                 </ul>
-                <a href="login page.html"><button class="sign">Sign In</button></a>
+                {% if session.get("logged_in") %}
+            <span class="welcome">Welcome, {{ session.get("user_name") }}</span>
+                <a href="/logout"><button class="sign">Logout</button></a>
+            {% else %}
+                <a href="/frontend/templates/signin.html"><button class="sign">Sign In</button></a>
+            {% endif %}
             </nav>
         </header>
 
@@ -42,7 +47,9 @@
                     <option value="bafaker">Bafaker</option>
                     <option value="cozyhive">Cozy Hive</option>
                     <option value="shaghaf">Shaghaf</option>
-                       <option value="mqrspaces">mqrspaces</option>
+                    <option value="Zodiac">Zodiac</option>
+                    <option value="mqr space">Mqrspace</option>
+                    
                 </select>
             
                 <button id="findBtn">Find Workspace</button>
@@ -205,7 +212,7 @@
     </div>
 
 </footer>
-     <script src="C:\Users\Z BOOK\go-space\go_space\frontend\js\scriptHome.js"></script>
+     <script src="/frontend/js/scriptHome.js"></script>
     </body>
 </html>
 
