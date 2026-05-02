@@ -12,34 +12,31 @@
 <body>
 
   <!-- Navbar -->
- <header>
+  <header>
     <img src="https://gospace.1onestrong.com/wp-content/uploads/2025/11/Logos-01.png" class="logo" alt="logo">
 
     <nav class="navbar">
-        <ul class="menu">
-            <li><a href="/" class="active">Home</a></li>
-            <li><a href="/#services">Services</a></li>
-            <li><a href="/places">Places</a></li>
-            <li><a href="/#contact">Contact us</a></li>
-        </ul>
-          <a href="/booking"><button class="booking">Booking</button></a>
+      <ul class="menu">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/places">Places</a></li>
+        <li><a href="/#contact">Contact us</a></li>
+      </ul>
+      <a href="/booking"><button class="booking">Booking</button></a>
 
-            {% if session.get("logged_in") %}
-            <span class="welcome">Welcome, {{ session.get("user_name") }}</span>
-              <a href="/logout"><button class="sign">Logout</button></a>
-          {% else %}
-              <a href="/signin"><button class="sign">Sign In</button></a>
-          {% endif %}
+      {% if session.get("logged_in") %}
+      <span class="welcome">Welcome, {{ session.get("user_name") }}</span>
+      <a href="/logout"><button class="sign">Logout</button></a>
+      {% else %}
+      <a href="/signin"><button class="sign">Sign In</button></a>
+      {% endif %}
     </nav>
-</header>
+  </header>
 
   <!-- Hero -->
   <div class="container hero">
     <h1>Find Your Perfect Workspace</h1>
-    <div class="search-box">
-      <input type="text" placeholder="Search workspace...">
-      <button>Search</button>
-    </div>
+
   </div>
 
   <!-- Workspaces -->
@@ -89,7 +86,7 @@
         <h3>Comma coworking space</h3>
         <p class="info">Comma is workingspace located in dokki Designed professionally, secure privacy and equipped with
           all facilities
-        
+
         </p>
         <button class="toggle-btn">View Details</button>
         <div class="details">
@@ -128,7 +125,7 @@
         <h3>Soul Lounge</h3>
         <p class="info">Soul is a workingspace located in maadi for working,studing and even playing card games and
           board games
-          
+
         </p>
         <button class="toggle-btn">View Details</button>
         <div class="details">
@@ -166,7 +163,7 @@
       <div class="card-body">
         <h3>Sha8af Space</h3>
         <p class="info">Sha8af is a 24h workingspace located in maadi,korba,dokki and many more places
-          
+
         </p>
         <button class="toggle-btn">View Details</button>
         <div class="details">
@@ -209,7 +206,7 @@
       <div class="card-body">
         <h3>Arom</h3>
         <p class="info">Arom is a fun to work in where it has pets and many card games if you feel bored
-          
+
         </p>
         <button class="toggle-btn">View Details</button>
         <div class="details">
@@ -355,7 +352,7 @@
       <div class="card-body">
         <h3>KROO </h3>
         <p class="info">KROO is a Serviced Offices, Meeting Rooms, Dedicated Desks, Hot Desks in Korba, Heliopolis
-         </a></p>
+          </a></p>
         <button class="toggle-btn">View Details</button>
         <div class="details">
           <div class="location-list">
@@ -422,7 +419,7 @@
             <h4>Premium Amenities</h4>
             <div class="amenities-list">
               <span>wifi</span>
-\              <span>Private Offices</span>
+              \ <span>Private Offices</span>
               <span>meeting Rooms</span>
               <span>Training Rooms</span>
               <span>Co-working space Spaces</span>
@@ -437,7 +434,8 @@
   <!-- Footer -->
   <div class="footer">
     <p id="f">© 2026 Workspace Finder</p>
-  </div>
+  </div> 
+  
   <script src="/frontend/js/script.js"></script>
 </body>
 

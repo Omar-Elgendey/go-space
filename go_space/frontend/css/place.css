@@ -102,24 +102,6 @@ header {
   margin-bottom: 20px;
 }
 
-.search-box {
-  display: flex;
-  gap: 10px;
-}
-
-.search-box input {
-  flex: 1;
-  padding: 12px;
-  border: 1px solid #ddd;
-}
-
-.search-box button {
-  background: #ba0013;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -175,17 +157,6 @@ header {
 
 .info {
   color: rgb(0, 0, 0);
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.info span {
-  color: #ba0013;
-  font-style: italic;
-}
-
-.link {
-  color: #ba0013;
   font-weight: bold;
   margin-bottom: 15px;
 }
