@@ -31,15 +31,14 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // تغيير الزر بعد الاشتراك
+        
         subscribeBtn.textContent = "Subscribed";
-        subscribeBtn.style.backgroundColor = "#555"; // تغيير اللون إذا أحببت
+        subscribeBtn.style.backgroundColor = "#555"; 
         subscribeBtn.style.cursor = "default";
 
-        // منع إعادة الاشتراك
+      
         subscribeBtn.disabled = true;
-
-        // يمكنك إضافة رسالة صغيرة بجانب الزر أيضًا
+        
         alert(`Thank you for subscribing with ${email}!`);
         emailInput.value = '';
     });
@@ -52,7 +51,6 @@ document.getElementById("findBtn").onclick = function () {
   window.location.href = "/places";
 };
 
-
 const spaces = {
   privateOffice: ["MQR Spaces", "KROO Space"],
   meetingRoom: ["MQR Spaces", "Zodiac Coworking Space", "KROO Space"],
@@ -61,7 +59,7 @@ const spaces = {
 };
 
 function showCard(type) {
-  // ربط كل نوع بالـ div الصحيح
+  
   const containerMap = {
     privateOffice: "resultPO",
     coworking: "resultCW",
@@ -70,15 +68,12 @@ function showCard(type) {
   };
 
   const containerId = containerMap[type];
-  if (!containerId) return; // لو النوع مش موجود
-
+  if (!containerId) return; 
   const container = document.getElementById(containerId);
-  container.innerHTML = ""; // تفريغ المحتوى القديم
-
+  container.innerHTML = ""; 
   spaces[type].forEach(space => {
     const p = document.createElement("p");
     p.textContent = space;
     container.appendChild(p);
   });
 }
-

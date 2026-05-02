@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--responsive-->
 <title>Book Your Cozy Co-working Space</title>
 <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2D7sAwgLmmX32zzW7VOflVR5gpgHOOU0Co1qi7e6f6JCb6SF">
 
@@ -10,9 +10,7 @@
 </head>
 
 <body>
-
 <h1>Choose Your Coworking Space</h1>
-
 <div class="container">
 
 <!-- Barah -->
@@ -45,7 +43,7 @@
 
 <!-- Arom -->
 <div class="card">
-<img src="https://scontent.fcai21-4.fna.fbcdn.net/v/t1.6435-9/200071525_302293441632703_3478303836843720948_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=tRUyNomuqgEQ7kNvwHHGAcL&_nc_oc=AdoQ95RRbRfbswL5GZKVePehlGoLBTaM3VesfKLGx_RuhdSpPyRxjF_jr49wjN6fYEE&_nc_zt=23&_nc_ht=scontent.fcai21-4.fna&_nc_gid=BXVPNsNOQl1J9TqeYG1PNQ&_nc_ss=7a3a8&oh=00_AfxcPpNrhMSOlZjlpYyxTjtGpxy6QRvnMbIh60jdCIOUAQ&oe=69F356E8">
+<img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFUiBnYb6691zLzEqUMqiSefT1gc3abGmY_qorvTxmJ_1XPhyedlcfXOP5oc4-4g5C7YPJrMMkMf8FtQxw-yljUc4MS6FinWbqtOpIiWi13Wquym5MVb99JMFZGl2Uh_4Dmo0uI=s1360-w1360-h1020-rw">
 <h3>Arom</h3>
 <button class="book-btn" onclick="openPopup('Arom')">Book</button>
 </div>
@@ -90,12 +88,10 @@
 
 
 <div class="popup" id="popup">
-
 <div class="popup-box">
-
 <span class="close" onclick="closePopup()">&times;</span>
-
 <h2 id="title">Book</h2>
+
 <form action="/save_booking" method="POST">
 
 <input type="text" name="fullname" placeholder="Full Name">
