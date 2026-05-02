@@ -10,7 +10,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+<<<<<<< HEAD
  
+=======
+  margin: 0;
+>>>>>>> 5d2982cecf8e27582d6bfca9cf8554d185ad7e3f
 }
 
 .menu {
